@@ -21,9 +21,9 @@ body { font-family: 'Nanum Gothic', sans-serif; }
     transition: all 0.3s;
 }
 #header .sns { float: left; }
-#header .sns a { margin-right: 15px; }
+#header .sns a { padding-right: 15px; }
 #header .membership { float: right; }
-#header .membership a { margin-left: 20px; }
+#header .membership a { padding-left: 20px; }
 #header .membership a+a{ position: relative; }
 #header .membership a+a:after{
     position: absolute;
