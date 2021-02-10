@@ -3,7 +3,7 @@
 
 .article1 { position: relative; overflow: hidden; }
 .article1 .plpa {
-    position: absolute; bottom:9.5%; left:50%;
+    position: absolute; bottom:8px; left:50%;
     transform: translate(80px);
     background: none; border: none;
     font-size: 30px; color: #fff;
@@ -18,7 +18,7 @@
 .slide_group .prev { left: 50px; }
 .slide_group .next { right: 50px; }
 .slide_group .slick-dots {
-    position: absolute; left:50%; transform: translate(-50%); bottom:10%;
+    position: absolute; left:50%; transform: translate(-50%); bottom:10px;
 }
 .slide_group .slick-dots li { display: inline-block; margin: 0 10px;}
 .slide_group .slick-dots li button {
