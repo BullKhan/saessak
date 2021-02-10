@@ -1,0 +1,155 @@
+/* max-width:1024px (1024px 이하) */
+/* min-width:769px (769px 이상) */
+/* @media screen and (min-width:769px) and (max-width:1024px){ */
+@media screen and (max-width:1024px){
+    #header h1 { 
+        font-family: 'Potta One', cursive; 
+        font-size: 26.25px; color: #ffae3d;
+        margin: 30px 0;
+        float: none;
+        text-align: center;
+    }
+    #nav {
+        float: none;
+        font-size: 16px;
+        margin-top: 30px;
+        /* border: 1px solid red; */
+        text-align: center;
+    }
+    #nav .depth1 > li {
+        display: inline-block;    
+        font-weight: bold;
+        padding: 0px 10px 30px 10px;
+        position: relative;
+    }
+    #nav .depth2 {
+        position: absolute;
+        left:50%; transform: translate(-50%); top:90%;
+        width: 170px;
+        background-color: #fff;
+        box-shadow: 0px -2px 10px #ccc;
+        padding: 5px 0;
+        border-radius: 5px;
+        color: #ffae3d;
+        display: none;
+        z-index: 999;
+    }
+    #header .open, #header .close { display: none; }
+}
+
+/* max-width:768px (768px 이하) */
+@media screen and (max-width:768px){
+    #header .mt { position: relative; }
+    #header .open,
+    #header .close { 
+        display: none;
+        position: absolute;
+        top:0; right:20px;
+    }
+    #header .open.on { display: block; }
+    #header .close.on { display: block; }
+    #header .open button,
+    #header .close button{
+        background: none;
+        border: none;
+        font-size: 30px;
+        color:#000;
+    }
+    #header h1 { 
+        font-family: 'Potta One', cursive; 
+        font-size: 26.25px; color: #ffae3d;
+        margin: 30px 0;
+        float: none;
+        text-align: left;
+    }
+    #nav {
+        float: none;
+        font-size: 16px;
+        margin-top: 30px;
+        /* border: 1px solid red; */
+        text-align: center;
+        display: none;
+        width: 200px;
+        background: #fff;
+        position: absolute;
+        top:100%; right:0; z-index: 99999;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #nav.on { display: block; }
+    #nav .depth1 > li {
+        display: block;
+        font-weight: bold;
+        padding: 10px 13px 10px 13px;
+        position: relative;
+    }
+    #nav .depth2 {
+        position: static;
+        left:0; transform: translate(0%); top:90%;
+        width: auto;
+        background-color: #fff;
+        box-shadow: unset;
+        padding: 10px 0px 0px;
+        border-radius: 0px;
+        color: #ffae3d;
+        display: none;
+        z-index: 999;
+    }
+    #nav .depth2::before {
+        display: none;
+        content:''; border: 8px solid #fff;
+        border-top: none;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        bottom: 100%; left: 50%; transform: translate(-50%);
+    }
+
+    #footer .menu { 
+        background: #eee;
+        color: #ccc; font-size: 12.25px;
+        padding: 0px;
+    }
+    #footer .menu .row { padding:0; }
+    #footer .menu a { 
+        margin: 0.5%;
+        display: inline-block;
+        padding: 15px 10px;
+        width: 49%;
+        border: 1px solid #ccc;
+        background: #444;
+    }
+    #footer .menu a+a { position: relative; }
+    #footer .menu a+a::after{
+        content:''; width: 1px; height: 8px; background: #000;
+        position: absolute; left:0; top: 2.5px; bottom:2.5px;
+        display: none;
+    }
+
+    #footer .info .company span { 
+        font-size: 12px;
+        display: block;
+        padding: 5px 7px;
+        font-weight: normal;
+        letter-spacing: -0.7px;
+    }
+    #footer .info .company span+span {
+        /* border-left:1px solid rgba(255, 255, 255, 0.5); */
+        position: relative;
+    }
+    #footer .info .company span+span::after {
+        position: absolute;
+        content:''; width:1px; height: 8px;
+        left:-1px; top: 3x; bottom: 3px;
+        background: rgba(255,255,255,0.5);
+        display: none;
+    }
+    #footer .copyright span { display: block; }
+
+}
+@media screen and (max-width:410px){
+    #footer .menu a { 
+        display: inline-block; padding: 10px 10px;
+        width: 100%;
+    }
+}
