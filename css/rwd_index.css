@@ -39,6 +39,13 @@
         background-size: cover; background-position-y: 70%;
         position: relative; 
     }
+
+    .main .article:nth-child(2) .text a {
+        display: inline-block; letter-spacing: 1px;
+        font-size: 10px; padding: 5px 10px; width:100%; text-align: center;
+        border: 1px solid #fff; border-radius: 3px; transition: all 0.4s;
+    }
+
     .main .article:nth-child(3) .column {
         float: left; width: 100%; margin-right: 0%; margin-top: 0;
     }
@@ -84,9 +91,9 @@
     }
     .main .article:nth-child(2) .text a {
         display: inline-block; letter-spacing: 1px;
-        font-size: 6px; padding: 3px 3px; 
+        font-size: 6px; padding: 5px 3px; 
         border: 1px solid #fff; border-radius: 3px; transition: all 0.4s;
-        width:100%;
+        width:100%; text-align: center;
     }
     .main .article:nth-child(3) .column .txt h3{ 
         font-size: 18px; margin-bottom: 10px; font-weight: bold; line-height: 1.2;

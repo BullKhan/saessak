@@ -39,6 +39,7 @@
 
 /* max-width:768px (768px 이하) */
 @media screen and (max-width:768px){
+    #header .sns { float: none; display: none; }
     #header .mt { position: relative; }
     #header .open,
     #header .close { 

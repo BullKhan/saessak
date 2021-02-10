@@ -28,7 +28,7 @@ body { font-family: 'Nanum Gothic', sans-serif; }
 #header .membership a+a:after{
     position: absolute;
     content:''; width:1px;
-    left: -10px; top:3px; bottom: 3px;
+    left: 9px; top:3px; bottom: 3px;
     background: rgba(255,255,255,0.7);
     cursor:default;
 }
